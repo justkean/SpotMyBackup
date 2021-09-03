@@ -450,7 +450,7 @@ function makeSurePlaylistExists(name, callback) {
         callback(true);
         return;
     }
-    var set = { name: name, public: "true" };
+    var set = { name: name, public: "false" };
     $.ajax({
         method: "POST",
         url: 'https://api.spotify.com/v1/users/' + userId + '/playlists',
